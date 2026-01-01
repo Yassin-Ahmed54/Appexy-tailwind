@@ -1,0 +1,314 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.l0{
+    position: relative;
+    display: inline-block;
+}
+
+.l0::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -8px;
+    width: 2.5px;
+    height: 0;
+    background-color: red;
+    transition: height 1s ease;
+}
+.l0::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -8px;
+    width: 2.5px;
+    height: 0;
+    background-color: red;
+    transition: height 1s ease;
+}
+.l0:hover::after {
+    height: 100%;
+}
+.l0:hover::before {
+    height: 100%;
+}
+.l2 {
+    position: relative;
+    display: inline-block;
+}
+
+.l2::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -8px;
+    width: 2.5px;
+    height: 0;
+    background-color: red;
+    transition: height 1s ease;
+}
+
+.l2::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -8px;
+    width: 2px;
+    height: 0;
+    background-color: red;
+    transition: height 1s ease;
+}
+.l2:hover::after {
+    height: 100%;
+}
+.l2:hover::before {
+    height: 100%;
+}
+
+.l3 {
+    position: relative;
+    display: inline-block;
+}
+.l3::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -8px;
+    width: 2px;
+    height: 0;
+    background-color: red;
+    transition: height 1s ease;
+}
+
+.l3::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -8px;
+    width: 2px;
+    height: 0;
+    background-color: red;
+    transition: height 1s ease;
+}
+.l3:hover::after {
+    height: 100%;
+}
+.l3:hover::before {
+    height: 100%;
+}
+
+.l4 {
+    position: relative;
+    display: inline-block;
+}
+
+.l4::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -8px;
+    width: 2px;
+    height: 0;
+    background-color: red;
+    transition: height 1s ease;
+}
+
+.l4::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -8px;
+    width: 2px;
+    height: 0;
+    background-color: red;
+    transition: height 1s ease;
+}
+
+.l4:hover::after {
+    height: 100%;
+}
+
+.l4:hover::before {
+    height: 100%;
+}
+
+.l5 {
+    position: relative;
+    display: inline-block;
+}
+
+.l5::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -8px;
+    width: 2px;
+    height: 0;
+    background-color: red;
+    transition: height 1s ease;
+}
+.l5::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -8px;
+    width: 2px;
+    height: 0;
+    background-color: red;
+    transition: height 1s ease;
+}
+.l5:hover::after {
+    height: 100%;
+}
+.l5:hover::before {
+    height: 100%;
+}
+
+.l6 {
+    position: relative;
+    display: inline-block;
+}
+
+.l6::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -8px;
+    width: 2.5px;
+    height: 0;
+    background-color: red;
+    transition: height 1s ease;
+}
+
+.l6::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -8px;
+    width: 2.5px;
+    height: 0;
+    background-color: red;
+    transition: height 1s ease;
+}
+.l6:hover::after {
+    height: 100%;
+}
+
+.l6:hover::before {
+    height: 100%;
+}
+
+.l7 {
+    position: relative;
+    display: inline-block;
+}
+
+.l7::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -8px;
+    width: 2.5px;
+    height: 0;
+    background-color: red;
+    transition: height 1s ease;
+}
+
+.l7::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -8px;
+    width: 2px;
+    height: 0;
+    background-color: red;
+    transition: height 1s ease;
+}
+
+.l7:hover::after {
+    height: 100%;
+}
+
+.l7:hover::before {
+    height: 100%;
+}
+
+.btnn {
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+.btnn:hover {
+  animation-play-state: paused;
+}
+
+.btn-dn:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 30px 10px rgba(255, 230, 0, 0.8);
+    background: linear-gradient(90deg, #ffe600, #ffb300);
+    transition: 0.4s ease;
+}
+
+.blu:has(span:hover) span:not(:hover){
+    filter: blur(4px);
+}
+.afterrr{
+    position: relative;
+    box-shadow: 0px 2px 10px 2px gray;
+}
+.afterrr{
+    position: relative;
+    overflow: hidden;
+}
+.afterrr::before {
+    content:"";
+    position:absolute;
+    width:0;
+    height:0;
+    right:0;
+    bottom:0;
+    background:rgba(94, 149, 212, 0.1);
+    transition: all 1.2s ease;
+    z-index:1;
+}
+.afterrr::after {
+    content:"";
+    position:absolute;
+    width:0;
+    height:0;
+    left:0;
+    top:0;
+    background:rgba(94, 149, 212, 0.1);
+    transition: all 1.2s ease;
+    z-index:1;
+}
+.afterrr:hover::before {
+    width:100%;
+    height:100%;
+}
+.afterrr:hover::after {
+    width:100%;
+    height:100%;
+}
+textarea:focus {
+  outline: none;
+  box-shadow: 0 0 2px 3px gray
+}
+input{
+    outline: none;
+}
+input:focus{
+    box-shadow: 0 0 2px 3px gray
+}
+input,textarea{
+    padding:15px;
+}
